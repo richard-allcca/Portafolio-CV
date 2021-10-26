@@ -1,8 +1,8 @@
 /* ********** Custom Properties ++++++++++ */
 :root {
   /* --first-color: hsl(333, 100%, 43%); */
-  --first-color: hsl(153, 100%, 43%);
-  --first-alpha-color: hsla(333, 100%, 43%, 0.75);
+  --first-color: hsl(230, 100%, 63%);
+  --first-alpha-color: hsla(230, 100%, 43%, 0.85);
   --second-color: hsl(228, 38%, 13%);
   --second-alpha-color: hsla(228, 38%, 13%, 0.75);
   --third-color: hsl(285, 67%, 24%);
