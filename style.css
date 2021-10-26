@@ -270,15 +270,19 @@ p {
   pointer-events: auto;
 }
 .menu a {
-  padding: 1rem;
+  margin-top:0.4rem;
+  padding: 1rem ;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   color: var(--first-color);
+  border-bottom: 0.2rem solid transparent;
 }
 .menu a:hover {
   color: var(--white-color);
+  border-bottom: 0.1rem solid var(--white-color);
+  border-radius: 15px;
   background-color: var(--first-color);
 }
 /* ========== Components - Modal ========== */
@@ -652,7 +656,7 @@ progress::-moz-progress-bar {
     padding: 0 1rem;
   }
   .menu a:last-child {
-    padding-right: 0;
+    margin-right: 0;
   }
   .menu a:hover {
     background-color: transparent;
