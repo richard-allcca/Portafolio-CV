@@ -49,6 +49,7 @@ a {
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
+  text-decoration: none;
 }
 a:hover {
   opacity: 0.5;
@@ -109,6 +110,7 @@ p {
   text-align: center;
   overflow-x: hidden;
   background-color: var(--carousel-bg-color);
+  border-radius: 3px;
 }
 .carousel .slides {
   padding-left: 0;
@@ -163,6 +165,7 @@ p {
   margin: 2rem auto;
   padding: 1rem;
   max-width: 800px;
+  background-color: var(--white-color);
 }
 .contact-form > * {
   padding: 0.5rem;
@@ -437,7 +440,7 @@ progress::-moz-progress-bar {
 .about > article {
   margin-bottom: 2rem;
 }
-/* formulario */
+/* cards contacto */
 .contact-card {
   margin: 1rem auto;
   padding: 1rem;
@@ -447,7 +450,10 @@ progress::-moz-progress-bar {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
 }
+
 .contact-card > svg {
   width: 2rem;
   height: 2rem;
@@ -557,11 +563,14 @@ progress::-moz-progress-bar {
 }
 /* ========== footer ========== */
 .footer{
+  height: 4rem;
   margin-bottom: var(--header-height);
   padding: 0.5rem;
   text-align: center;
+  line-height: 4rem;
+  font-size: 1.5rem;
   color: var(--white-color);
-  background-color: var(--third-alpha-color);
+  background-color: var(--second-alpha-color);
 }
 /* .footer small{
 } */
