@@ -164,6 +164,8 @@ p {
   margin: 1rem auto;
   padding: 1rem;
   text-align: center;
+  border: thin solid var(--first-color);
+  box-shadow: 0.25rem 0.25rem 1rem hsla(0, 0%, 0%, 0.25);
 }
 .service-card svg {
   margin-bottom: 1.25rem;
@@ -181,7 +183,7 @@ p {
 .text-right {
   text-align: right;
 }
-div .none {
+div .none,.none {
   display: none;
 }
 /* clases utilities en desktop */
@@ -203,8 +205,10 @@ div .none {
 
 /* *========== Components - menu ========== */
 .menu-btn {
-  outline: thin solid var(--first-color);
+  /* outline: thin solid var(--first-color); */
   border: 0;
+  border: 1px solid var(--first-color);  
+  border-radius:0.5rem;
   cursor: pointer;
   background-color: var(--second-color);
 }
@@ -241,7 +245,7 @@ div .none {
   text-align: center;
   text-decoration: none;
   color: var(--first-color);
-  border-bottom: 0.2rem solid transparent;
+  border-bottom: 0.1rem solid transparent;
 }
 .menu a:hover {
   color: var(--white-color);
@@ -282,6 +286,12 @@ div .none {
 }
 .about > article {
   margin-bottom: 2rem;
+}
+/* estilos para los dos primeros botones  */
+div .btn:hover{
+  opacity: 1;
+  background-color: var(--first-color);
+  color: var(--white-color);
 }
 /* cards contacto */
 .contact-card {
@@ -344,6 +354,7 @@ div .none {
   width: 100%;
   margin: 0 auto;
   display: block;
+  
 }
 .portfolio-card img {
   width: 100%;
@@ -370,6 +381,7 @@ div .none {
 .portfolio-card:hover .portfolio-card-info {
   opacity: 1;
   pointer-events: auto;
+  color: black;
 }
 
 .portfolio-card-info > div {
@@ -533,9 +545,9 @@ div .none {
   padding: 1rem;
   border: 3px solid var(--first-alpha-color);
 }
-.contact-form input[type="submit"]:hover {
+/* .contact-form input[type="submit"]:hover {
   opacity: 0.75;
-}
+} */
 .contact-form *::placeholder {
   color: var(--gray-dark-color);
 }
@@ -675,7 +687,7 @@ progress::-moz-progress-bar {
     align-content: center;
   }
   .content-center-height {
-    padding-top: 6rem;
+    /* padding-top: 6rem; */
   }
   /* ========= contact - form ========= */
   .contact-form {
