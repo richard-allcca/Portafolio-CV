@@ -144,8 +144,8 @@ p {
   min-height: 100vh;
 }
 .gray-scale {
-  filter: grayscale(1);
-  -webkit-filter: grayscale(1);
+  /* filter: grayscale(1); */
+  /* -webkit-filter: grayscal e(1); */
 }
 
 .seccion {
@@ -279,7 +279,26 @@ div .none,.none {
   font-size: 7.5vw;
   color: var(--color);
 }
-
+/*? animacion de texto */
+.logo-text{
+  display: block;
+  /* font-family: monospace; */
+  white-space: nowrap;
+  border-right: 4px solid white;
+  width: 10ch;
+  animation: typing 2s steps(10) , blink .5s infinite step-end alternate ;
+  overflow: hidden;
+}
+@keyframes typing{
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 /* *========== seccion - acerca ========== */
 .about {
   padding-top: 2rem;
@@ -571,7 +590,7 @@ div .btn:hover{
 
 
 /* ======================================== */
-/* Estilos Component  */
+/*  Componentes  */
 /* ======================================== */
 
 /* ========== Components - Modal ========== */

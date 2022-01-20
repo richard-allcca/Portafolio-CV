@@ -18,7 +18,7 @@
   });
 })(document);
 
-/* ********** Menu ********** */
+/* ********** Formulario ********** */
 ((d) => {
   const $form = d.querySelector(".contact-form"),
     $loader = d.querySelector(".contact-form-loader"),
