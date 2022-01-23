@@ -435,6 +435,7 @@ div .btn:hover {
   min-width: 40vw;
   max-width: 50% ;
   max-height: 12rem;
+  margin: 0 auto;
 }
 .portfolio-modal h3 {
   border-bottom: medium solid var(--first-color);
@@ -627,7 +628,7 @@ div .btn:hover {
 .modal-content {
   text-align: center;
   max-height: 90vh;
-  width: 100vw;
+  /* width: 100vw; */
 }
 .modal-content .portfolio-modal{
   margin: 0 auto;
@@ -689,8 +690,13 @@ progress::-moz-progress-bar {
   }
   /* ========= portafolio - modal ========= */
   .modal{
-    max-width: 80vw;
     margin: 0 auto;
+    width: 100vw;
+  }
+  .modal .modal-content{
+    width: 80%;
+    margin:10% auto 15%;
+    max-height: 70vh;
   }
   .portfolio-modal {
     flex-direction: row;
