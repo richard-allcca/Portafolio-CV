@@ -428,13 +428,13 @@ div .btn:hover {
   display: flex;
   flex-direction: column;
   background-color: var(--white-color);
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 /* ! regla personal  */
 .portfolio-modal img {
-  min-width: 40%;
-  max-width: 400px;
-  max-height: 300px;
+  min-width: 40vw;
+  max-width: 50% ;
+  max-height: 12rem;
 }
 .portfolio-modal h3 {
   border-bottom: medium solid var(--first-color);
@@ -446,6 +446,9 @@ div .btn:hover {
   display: grid;
   grid-template-columns: 40% 60%;
   grid-auto-rows: 1.5rem;
+}
+.portfolio-details small {
+  padding-left: 10px;
 }
 .portfolio-details b {
   color: var(--first-color);
@@ -622,8 +625,17 @@ div .btn:hover {
   transition: all 1s;
 }
 .modal-content {
-  position: relative;
+  text-align: center;
+  max-height: 90vh;
+  width: 100vw;
 }
+.modal-content .portfolio-modal{
+  margin: 0 auto;
+  max-width: 90vw;
+  min-width: 80vw;
+  min-height: 85vh;
+}
+
 .modal-close {
   position: absolute;
   top: 1rem;
@@ -676,13 +688,17 @@ progress::-moz-progress-bar {
     grid-template-columns: repeat(2, 50%);
   }
   /* ========= portafolio - modal ========= */
+  .modal{
+    max-width: 80vw;
+    margin: 0 auto;
+  }
   .portfolio-modal {
-    max-width: 800px;
     flex-direction: row;
   }
   .portfolio-modal img {
-    max-width: 400px;
-    max-height: 400px;
+    min-width: 30rem;
+    max-height: 15rem;
+    margin: auto ;
   }
   .portfolio-info {
     margin-left: 1rem;
