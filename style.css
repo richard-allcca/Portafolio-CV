@@ -28,9 +28,9 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --first-color: hsl(130, 80%, 33%);
-    --first-alpha-color: hsla(130, 100%, 43%, 0.85);
-    --second-color: hsl(128, 38%, 13%);
+    --first-color: hsl(260, 80%, 60%);
+    --first-alpha-color: hsla(260, 100%, 63%, 0.85);
+    --second-color: hsl(258, 38%, 13%);
   }
 }
 @media (prefers-color-scheme: light) {
@@ -387,10 +387,10 @@ div .btn:hover {
   width: 100%;
   height: 100%;
   min-height: 60vh;
-  object-fit: cover;
   border: 0.2rem solid hsl(0, 0%, 50%, 0.2);
-  object-fit: contain;
+  object-fit: scale-down;
   filter: grayscale(0.4);
+    /* transform: scale(0.8); */
 }
 .portfolio-card-info {
   position: absolute;
