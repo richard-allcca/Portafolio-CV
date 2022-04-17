@@ -28,8 +28,8 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --first-color: hsl(260, 80%, 60%);
-    --first-alpha-color: hsla(260, 100%, 63%, 0.85);
+    --first-color: hsl(217, 48%, 49%);
+    --first-alpha-color: hsla(250, 100%, 63%, 0.85);
     --second-color: hsl(258, 38%, 13%);
   }
 }
