@@ -52,3 +52,25 @@
       });
   });
 })(document);
+document.addEventListener("click", (e) => {
+  const $title1 = document.querySelector(".text-lg-right aside"),
+    $title2 = document.querySelector(".title2 h2"),
+    $cards = document.querySelectorAll(".service-card");
+  console.log($cards);
+  if (e.target.textContent === "Acerca") {
+    $title1.classList.add("animate__fadeInLeft");
+    $title2.classList.add("animate__fadeInRight");
+  } else {
+    $title1.classList.remove("animate__fadeInLeft");
+    $title2.classList.remove("animate__fadeInRight");
+  }
+  if (e.target.textContent === "Servicios") {
+    $cards.forEach((card) => {
+      card.classList.add("animate__bounce");
+    });
+  } else {
+    $cards.forEach((card) => {
+      card.classList.remove("animate__bounce");
+    });
+  }
+});
