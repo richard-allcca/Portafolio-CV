@@ -29,7 +29,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --first-color: hsl(217, 48%, 49%);
-    --first-alpha-color: hsla(250, 100%, 63%, 0.85);
+    --first-alpha-color: hsla(250, 85%, 38%, 0.8);
     --second-color: hsl(258, 38%, 13%);
   }
 }
@@ -40,7 +40,10 @@
     --second-color: hsl(228, 38%, 13%);
   }
 }
-
+.icono-skill{
+  width: 2rem;
+  border-radius: 10px;
+}
 /* ======================================== */
 /* Reset Styles  */
 /* ======================================== */
@@ -414,6 +417,7 @@ div .btn:hover {
   opacity: 1;
   pointer-events: auto;
   color: black;
+  
 }
 
 .portfolio-card-info > div {
